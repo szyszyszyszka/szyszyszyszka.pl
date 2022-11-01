@@ -9,11 +9,6 @@
 	<link rel="icon" type="image/x-icon" href="img/szyszka.jpg">
 	<script src = "jquery-3.6.0.min.js"></script>
     <?php
-    header("Strict-Transport-Security: max-age=31536000");
-    header("X-Content-Type-Options: nosniff");
-    header("X-Frame-Options: DENY");
-    header("Cross-Origin-Resource-Policy: same-origin");
-    header("Cross-Origin-Opener-Policy: same-origin-allow-popups");
     if(!isset($_POST["language"]))
     {
         $lang = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
