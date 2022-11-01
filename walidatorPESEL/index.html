@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+	<meta charset = "utf-8"/>
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel = "stylesheet" href = "walidator.css" type = "text/css" />
+	<link rel="icon" type="image/x-icon" href="../img/szyszka.jpg">
+	<script src = "walidator.js"></script>
+	<title>Walidator PESEL</title>
+</head>
+<body>
+	<h2>Walidacja numeru PESEL</h2>
+	<span>
+		<label for = 'pesel'>Podaj swój numer PESEL:</label> <input type = "number" id = "pesel"/>
+	<br/>
+    Podaj swoją płeć: 
+		<div><input type = "radio" name = "plec" id = 'plecmeska' value = "m"/><label for = 'plecmeska'>Mężczyzna</label></div>
+		<div><input type = "radio" name = "plec"  id = 'pleczenska' value = "k"/><label for = 'pleczenska'>Kobieta</label></div>
+		<label for = 'data_urodzenia'>Podaj date urodzenia:</label> <input type = "date" id = "data_urodzenia"/>
+	<br/>
+	<button onclick = "walidacja()">Potwierdź</button>
+	</span>
+	<div id = "pisanie">
+	</div>
+	<footer>
+	<b>UWAGA!</b> Powyżyszy walidator numeru PESEL powstał jedynie w celach edukacyjnych i nie był poddany żadnym audytom bezpieczeństwa<br/>
+	Nie odpowiadam za żadne wycieki danych czy inne problemy z bezpieczeństwiem i prywatnością. <b><u>Korzystasz z niego na własną odpowiedzialność!</u></b>
+	</footer>
+</body>
+</html>
