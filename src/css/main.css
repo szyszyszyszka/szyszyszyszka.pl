@@ -1,0 +1,239 @@
+/* Animations */
+@keyframes appering
+{
+	0%{opacity:0;bottom:-150px;}
+	100%{opacity: 1; bottom: 0px;}
+}
+@keyframes fading 
+{
+    0%{opacity:0;}  
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}  
+}
+@keyframes fading_pic
+{
+    0%{opacity:0;}  
+    100%{opacity: 1;}  
+}
+body
+{
+	font-family: 'Hanken Grotesk','Verdana','sans-serif';
+	background-image: url(../../img/smoke-g7edce1268_1920.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    color: white;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.icons
+{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+#my_name_h1
+{
+    position: relative;
+    text-align: center;
+    animation-name: appering;
+    animation-duration: 2s;
+}
+
+#current_time
+{
+    visibility: hidden;
+    position: relative;
+    animation-name: appering;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    text-align: center;
+    font-style: italic;
+}
+
+#profile_picture > img
+{
+    border-radius: 50%;
+}
+
+#profile_picture
+{
+    animation-name: fading_pic;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    opacity: 0;
+    padding-top: 1rem;
+    height: fit-content;
+}
+
+main
+{
+    visibility: hidden;
+    animation-name: fading;
+    animation-duration: 0.7s;
+    animation-delay: 3s;
+    text-align: left;
+}
+
+footer
+{
+    visibility: hidden;
+    animation-name: fading;
+    animation-duration: 0.7s;
+    animation-delay: 3s;
+    text-align: center;
+}
+
+#fb_contact
+{
+    text-align: right;
+}
+
+#insta_contact
+{
+    text-align: left;
+}
+
+h2
+{
+    font-weight: 600;
+}
+
+a
+{
+    color: rgb(252, 140, 140);
+    text-decoration: none;
+}
+
+a:hover
+{
+    cursor: pointer;
+    color: rgb(23, 162, 164);
+}
+a:active
+{
+    cursor: pointer;
+    color: rgb(83, 4, 120);
+}
+
+/* Smartphones, fridges etc. */
+@media (max-width: 500px)
+{
+    #my_name_h1
+    {
+        font-size: 3rem;
+    }
+    #current_time
+    {
+        font-size: 2rem;
+    }
+    main
+    {
+        padding-left: 1rem;
+        width: 80vw;
+    }
+    h2
+    {
+        font-size: 2rem;
+    }
+    .description
+    {
+        font-size: 1.5rem;
+    }
+    #profile_picture > img
+    {
+        width: 25%;
+        height: 25%;
+    }
+    #facebook
+    {
+        width: 24%; height: 24%;
+    }
+    #instagram
+    {
+        width: 16%; height: 16%;
+    }
+}
+
+/* Tablets and big smartphones */
+@media (min-width: 500px) and (max-width: 1024px)
+{
+    #my_name_h1
+    {
+        font-size: 4rem;
+    }
+    #current_time
+    {
+        font-size: 2.2rem;
+    }
+    main
+    {
+        padding-left: 1.5rem;
+        width: 90vw;
+    }
+    h2
+    {
+        font-size: 2.5rem;
+    }
+    .description
+    {
+        font-size: 1.7rem;
+    }
+    #profile_picture > img
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #facebook
+    {
+        width: 16%; height: 16%;
+    }
+    #instagram
+    {
+        width: 10%; height: 10%;
+    }
+}
+
+/* Desktops and laptps */
+@media (min-width: 1024px)
+{
+    #my_name_h1
+    {
+        font-size: 4.5rem;
+    }
+    #current_time
+    {
+        font-size: 2.5rem;
+    }
+    main
+    {
+        width: 95vw;
+    }
+    h2
+    {
+        font-size: 3rem;
+    }
+    .description
+    {
+        font-size: 2rem;
+    }
+    #profile_picture > img
+    {
+        width: 15%;
+        height: 15%;
+    }
+    #facebook
+    {
+        width: 10%; height: 10%;
+    }
+    #instagram
+    {
+        width: 6%; height: 6%;
+    }
+}
